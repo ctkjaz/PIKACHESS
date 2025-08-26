@@ -19,9 +19,10 @@ jobs:
           java-version: '17'
 
       - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: 'stable'
+     - uses: subosito/flutter-action@v2
+  with:
+    flutter-version: '3.13.10'
+    channel: stable
 
       - name: Get dependencies
         run: flutter pub get
